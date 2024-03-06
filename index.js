@@ -76,12 +76,7 @@ app.delete('/delete/:id', async (req, res)=> {
 })
 
 
-app.get("/data2",async(request,response)=>{
 
-    const data = await modeldata.find();
-    response.json(data);
-      
-  })
 
 app.listen(port,()=>{
     console.log(  `welcome aboard! App listening at http://localhost:${port}`);
